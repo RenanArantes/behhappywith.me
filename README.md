@@ -1,3 +1,7 @@
+## PWA: Construa aplicações progressivas com React
+
+Projeto original: https://github.com/lgapontes/behappywith.me
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
