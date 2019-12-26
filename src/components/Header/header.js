@@ -6,7 +6,9 @@ export default function Header() {
     return (
         <div className="header pure-menu pure-menu-horizontal pure-menu-fixed">
             <a href="/"><img className="logo" src={logo} alt=""></img></a>
-            <h4 className="label">Agenda de Gentilizas</h4>
+            <h4 className="label">
+                <strong>Agenda de Gentilizas</strong>
+            </h4>
         </div>
     );
 }
