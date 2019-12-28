@@ -1,5 +1,5 @@
 import React from 'react';
-import './img/avatars.png';
+import './img/avatares.png'
 
 class Image extends React.Component {
     constructor(props) {

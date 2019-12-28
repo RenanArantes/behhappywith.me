@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../Image/image.js'
+import Image from '../Image/image.jsx'
 
 export default function GenderImage(props) {
     return(
