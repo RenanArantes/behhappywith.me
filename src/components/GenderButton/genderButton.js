@@ -4,14 +4,14 @@ import GenderImage from '../GenderImage/genderImage.js';
 
 export default function GenderButton(props) {
     return(
-        <a
+        <a 
             className={
-                props.selecionado ? 
+                props.selecionado ?
                 "gender-button selected-gender-button" :
                 "gender-button"
             }
             href="#!"
-            onClick={e => props.atualizarGenero(e, props.genero)}
+            onClick={e => props.atualizarGenero(e,props.genero)}
         >
             <GenderImage
                 genero={props.genero}

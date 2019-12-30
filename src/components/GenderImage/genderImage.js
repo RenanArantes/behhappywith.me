@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from '../Image/image.jsx'
+import Image from '../Image/image.js';
+import bg from '../Image/img/avatars.png';
 
 export default function GenderImage(props) {
     return(
@@ -7,9 +8,9 @@ export default function GenderImage(props) {
             eixoX={0}
             eixoY={(props.genero === 'm') ? 0 : 1}
             width={170}
-            heigth={170}
+            height={170}
             backgroundHeight={340}
-            arquivo="img/avatars.png"   
+            arquivo={bg}
         />
     )
 }

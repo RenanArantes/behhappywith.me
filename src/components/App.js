@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './Header/header.js';
 import NovoUsuario from './NovoUsuario/novoUsuario.js';
+import Toast from './Toast/toast.js';
 
 import '../css/App.css';
 
@@ -10,7 +11,10 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <NovoUsuario />
+        <NovoUsuario 
+          erro={msg=>this.refs.toast.erro(msg)}
+        />
+        <Toast ref="toast"/>
       </div>
     );
   }

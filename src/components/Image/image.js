@@ -1,5 +1,4 @@
 import React from 'react';
-import './img/avatares.png'
 
 class Image extends React.Component {
     constructor(props) {
@@ -7,11 +6,11 @@ class Image extends React.Component {
     }
 
     calcularPosicaoX() {
-        return `${this.props.EixoX * this.props.width * (-1)}px`
+        return `${this.props.eixoX * this.props.width * (-1)}px`
     }
 
     calcularPosicaoY() {
-        return `${this.props.EixoY * this.props.height * (-1)}px`
+        return `${this.props.eixoY * this.props.height * (-1)}px`
     }
 
     calcularTamanho() {
@@ -20,7 +19,7 @@ class Image extends React.Component {
 
     obterEstilo() {
         return {
-            backgroundImage: `url(${this.props.arquivo})`,
+            backgroundImage: "url("+ this.props.arquivo +")",
             backgroundPositionX: this.calcularPosicaoX(),
             backgroundPositionY: this.calcularPosicaoY(),
             backgroundSize: this.calcularTamanho(),
@@ -32,8 +31,17 @@ class Image extends React.Component {
     }
 
     render() {
-        return(
-            <div style={this.obterEstilo()}>
+        return (
+            <div style={{
+                backgroundImage: "url("+ this.props.arquivo +")",
+                backgroundPositionX: this.calcularPosicaoX(),
+                backgroundPositionY: this.calcularPosicaoY(),
+                backgroundSize: this.calcularTamanho(),
+                width: `${this.props.width}px`,
+                height: `${this.props.height}px`,
+                display: 'table',
+                margin: '0 auto'
+            }}>
             </div>
         )
     }
