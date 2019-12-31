@@ -1,4 +1,5 @@
 import React from 'react';
+import './img/botoes.png';
 
 class Image extends React.Component {
     constructor(props) {

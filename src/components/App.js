@@ -12,7 +12,7 @@ class App extends React.Component {
       <div>
         <Header />
         <NovoUsuario 
-          erro={msg=>this.refs.toast.erro(msg)}
+          erro={msg=>this.refs.toast.error(msg)}
         />
         <Toast ref="toast"/>
       </div>
