@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# v0.0.1
+
+CACHE:
+./src/components/Image/img/avatars.png
+./src/components/Image/img/botoes.png
+./src/img/favicon.ico
+./src/components/Header/header_img/logo.png
+
+NETWORK:
+*
