@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor() {
     super()
     Usuario.obter(usuario	=> {
-      this.state	=	{
+      this.state = {
         usuario: usuario
       };
     },() => {
@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   msgNovoUsuario(usuario) {
-    let genero = usuario.genero == 'm' ? 'o' : 'a';
+    let genero = usuario.genero === 'm' ? 'o' : 'a';
     this.refs.toast.sucesso(
       `Seja bem-vind${genero} ${usuario.nome}!`
     )

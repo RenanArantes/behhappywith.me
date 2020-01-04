@@ -34,7 +34,7 @@ class ImageScroller extends React.Component {
                     e.preventDefault();
                     let manipularEvento = this.state.manipularEvento;
                     let index = manipularEvento.index;
-                    if (posicao == 'esquerda') {
+                    if (posicao === 'esquerda') {
                         index += -1;
                     } else {
                         index += 1;

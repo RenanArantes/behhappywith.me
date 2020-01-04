@@ -13,7 +13,7 @@ class Usuario {
     validarNome() {
         if (
             typeof this.nome == 'string' &&
-            Number(this.nome.length) != 0 &&
+            Number(this.nome.length) !== 0 &&
             this.nome.length <= 40) {
             return true;
         }
@@ -22,7 +22,7 @@ class Usuario {
 
     validarGenero() {
         return ['m','f'].some(param =>{
-            return this.genero == param
+            return this.genero === param
         })
     }
 
